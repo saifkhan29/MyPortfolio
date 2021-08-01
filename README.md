@@ -13,3 +13,4 @@
 ![signup_form](https://user-images.githubusercontent.com/79800224/127775739-9e0893f0-3ebe-476e-b612-1cd15ae5d665.png)
 ![image_gallery](https://user-images.githubusercontent.com/79800224/127775741-2ca1a8e2-2bde-4eac-aeeb-1874bfbcdefe.png)
 ![Screenshot (100)](https://user-images.githubusercontent.com/79800224/127775743-22ae92aa-50fe-418c-bd89-5034f2fa8761.png)
+[SaifKhan_InternshalaResume (1).pdf](https://github.com/saifkhan29/MyPortfolio/files/6912976/SaifKhan_InternshalaResume.1.pdf)
