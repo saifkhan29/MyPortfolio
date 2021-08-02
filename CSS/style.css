@@ -346,9 +346,10 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     padding-right: 3rem;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .brand-area{
         padding: 0px !important;
+        margin: 0px !important;
     }
     
 }
