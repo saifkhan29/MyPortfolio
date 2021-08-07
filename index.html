@@ -55,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header_area">
       <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+          <div class="container">
             <h2>Saif Khan</h2>
             <button
               class="navbar-toggler"
@@ -70,9 +70,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <div class="me-auto"></div>
-              <ul class="navbar-nav me-5 d-flex align-items-center">
+              <ul class="navbar-nav d-flex align-items-center">
                 <li class="nav-item mx-3">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#home"
                     >Home</a
                   >
                 </li>
@@ -92,7 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <a class="nav-link" href="#youtube">Youtube</a>
                 </li>
                 <li class="nav-item mx-3">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link final-active" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -105,72 +105,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Start of section 1 -->
     <main class="site-main">
       <!-- Start banner area -->
-      <section class="site-banner">
-        <div class="container">
-          <div class="row">
-            <div
-              class="
-                col-lg-6
-                site-title
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-                order-lg-0 order-sm-1
-              "
-            >
-              <div class="section-1">
-                <h3
-                  class="
-                    title-text
-                    d-flex
-                    justify-content-center
-                    align-items-end
-                  "
-                >
-                  Hey
-                </h3>
-                <h1 class="title-text text-uppercase">I am Saif</h1>
-                <h4 class="title-text title-uppercase">Front End Developer</h4>
-                <h4 class="title-text title-uppercase">UI / UX Designer</h4>
-                <div class="site-buttons">
-                  <div class="d-flex flex-row flex-wrap">
-                    
-                    <a href="#contact" class="contact1">
-                    <button
-                      type="button"
-                      class="btn button primary-button ms-4 text-uppercase"
-                    >
-                      Contact
-                    </button>
-                    </a>
-                    <a href="https://github.com/saifkhan29/MyPortfolio/files/6913151/SaifKhan_InternshalaResume.3.pdf">
-                    <button
-                      type="button"
-                      class="btn button secondary-button ms-4 text-uppercase"
-                    >
-                      Get CV
-                    </button>
-                  </a>
-                  </div>
-                </div>
+      <!-- No custom css is required -->
+      <section class="site-banner" id="home">
+        <div class="container vh-dynamic d-flex align-items-center">
+          <div class="row w-100 flex-lg-row flex-column-reverse">
+            <div class="col-lg-6 text-xl-start text-center mt-lg-0 mt-4">
+              <h3 class="fw-bold">Hey There 👋</h3>
+              <h1 class="fw-bold my-4 display-4">I AM SAIF</h1>
+              <h2 class="fw-bold">Front End Developer</h2>
+              <h3 class="fw-bold">UI / UX Designer</h3>
+              <div class="action-btns mt-4">
+                <a href="#projects" class="btn button primary-button px-lg-5 py-lg-3 me-3">Projects</a>
+                <a href="#contact" class="btn button secondary-button px-lg-5 py-lg-3">Contact</a>
               </div>
             </div>
-            <div
-              class="
-                col-lg-6
-                order-lg-1 order-sm-0
-                banner-image
-                d-flex
-                justify-content-center
-              "
-            >
-              <img
-                src="https://user-images.githubusercontent.com/79800224/127775722-d1c6af71-d941-447e-a193-6c0e9a36610b.png"
-                
-                alt=""
-                class="img-fluid portimg1"
-              />
+            <div class="col-lg-6">
+              <img src="https://user-images.githubusercontent.com/79800224/127775722-d1c6af71-d941-447e-a193-6c0e9a36610b.png" alt="" class="w-100">
             </div>
           </div>
         </div>
@@ -179,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- Section 2 -->
 
-      <section class="about-area pt-5 mt-5" id="about" >
+      <section class="about-area" id="about" >
         <div
           class="
             container-fluid

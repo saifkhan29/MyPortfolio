@@ -1,7 +1,6 @@
 @import url(./fonts.css);
 @import url(./Partials/variable.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
-
 /* Global Variables */
 @import url(../CSS/global.css);
 
@@ -11,15 +10,8 @@
 
 }
 
-
-.header_area .main-menu .navbar {
-    padding: .5rem 3rem;
-
-}
-
 .header_area .main-menu .nav-item .nav-link{
     font-family: 'Roboto', sans-serif;;
-    text-transform: uppercase;
     font-weight: 500;
     padding: .8rem;
     color:var(--text-color);
@@ -61,11 +53,15 @@
 
 /* end of navigation bar */
 
+@media (max-width: 992px) {
+    .vh-dynamic {
+        height: auto !important;
+        padding-top: 40px;
+    }
+}
 
 /* Banner area start */
-
-
-.site-main .site-banner .site-title h3{
+/* .site-main .site-banner .site-title h3{
     font-weight: 500;
     text-align: left;
     padding-right: 15px;
@@ -121,7 +117,7 @@
 
 .contact1:hover{
     color: #000;
-}
+} */
 
 /* Banner area end */
 

@@ -18,7 +18,7 @@
     border-radius: 4px;
 }
 
-.button.primary-button{
+.primary-button{
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
@@ -26,13 +26,13 @@
     box-shadow: var(--box-shadow);
 }
 
-.button.primary-button:hover{
+.primary-button:hover{
     background: whitesmoke;
     background-clip: padding-box;
     color: #000;
 }
 
-.button.primary-button::after, .button.secondary-button::after{
+.primary-button::after, .secondary-button::after{
     position: absolute;
     top: -3px; left: -3px;
     bottom: -3px; right: -3px;
@@ -42,14 +42,14 @@
     border-radius: 4px;
 }
 
-.button.secondary-button{
+.secondary-button{
     background: white ;
     background-clip: padding-box;
     transition: background .6s ease;
 
 }
 
-.button.secondary-button:hover{
+.secondary-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);

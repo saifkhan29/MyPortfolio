@@ -54,20 +54,63 @@ $(document).ready(function () {
 
   // sticky navigation menu
 
-  let nav_offset_top = $('.header_area').height() + 50;
-
+  let nav_offset_top = $('.header_area').height();
+  $('.main-menu').css('transition', '.3s ease-out');
+  
   function navbarFixed() {
-      if ($('.header_area').length) {
+    if ($('.header_area').length) {
           $(window).scroll(function () {
               let scroll = $(window).scrollTop();
-              if (scroll >= nav_offset_top) {
+              if (scroll > 0) {
                   $('.header_area .main-menu').addClass('navbar_fixed');
-              } else {
+                  $('body').css('padding-top', nav_offset_top);
+                } else {
                   $('.header_area .main-menu').removeClass('navbar_fixed');
+                  $('body').css('padding-top', 0);
               }
           })
       }
   }
 
+  // Function for dynamic sizing of home section
+  function setViewportHeight() {
+    const navHeight = document.querySelector('.header_area').offsetHeight;
+    $('.vh-dynamic').css('height', `calc(100vh - ${navHeight}px)`);
+  }
+
+  // Function for active states in navbar
+  function activeStates() {
+    const sections = document.querySelectorAll('section'); 
+    const navLinks = document.querySelectorAll('ul li a.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let activeDiv = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if(pageYOffset >= sectionTop - nav_offset_top) {
+          activeDiv = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach( link => {
+        link.classList.remove('active');
+        let currentLinkHref = link.getAttribute('href');
+        let finalActiveState = document.querySelector('#youtube').offsetTop + document.querySelector('#youtube').offsetHeight;
+        currentLinkHref = currentLinkHref.replace('#','');
+        if(currentLinkHref == activeDiv && !(pageYOffset >= finalActiveState)) {
+          link.classList.add('active');
+        } else if(pageYOffset >= finalActiveState) {
+          link.classList.remove('active');
+          document.querySelector('.final-active').classList.add('active');
+        }
+      });
+    });
+  }
+
+  
   navbarFixed();
+  setViewportHeight();
+  activeStates();
+
 });
